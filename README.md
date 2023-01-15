@@ -1,5 +1,5 @@
 ### Dek-D-Frontend-Intern
-> An assignment for submit front-end developer intern | Dek-D
+> An assignment for registering a front-end developer intern at Dek-D.
 
 จงสร้างระบบ Slider โดยใช้ JavaScript, HTML, CSS ให้ได้ตามรูปข้างล่าง โดยมีเงื่อนไขดังนี้
 
