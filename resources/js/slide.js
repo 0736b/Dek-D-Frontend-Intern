@@ -1,4 +1,5 @@
 let slides = document.getElementsByClassName("slide");
+let dots = document.getElementsByClassName("dot");
 let btn_left = document.getElementById("btn-left");
 let btn_right = document.getElementById("btn-right");
 
@@ -23,11 +24,15 @@ to_curr = (idx) => {
         slides[i].classList.remove('slide-curr');
         slides[i].classList.remove('slide-next');
     }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove('dot-curr');
+    }
     next >= slides.length ? next = 0 : next;
     prev < 0 ? prev = slides.length - 1 : prev;
     slides[prev].classList.add('slide-prev');
     slides[curr].classList.add('slide-curr');
     slides[next].classList.add('slide-next');
+    dots[curr].classList.add('dot-curr');
 }
 
 btn_left.addEventListener('click', to_prev);
